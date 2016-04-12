@@ -12,9 +12,6 @@
     state: present
     key: "{{ jenkins_repo_key_url }}"
 
-- name: Install java-openjdk-1.7.0
-  yum: name=java-1.7.0-openjdk state=present
-
 - name: Ensure Jenkins is installed.
   yum: pkg=jenkins state=installed
 
